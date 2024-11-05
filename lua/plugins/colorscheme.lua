@@ -6,14 +6,17 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "tokyonight-storm",
+            colorscheme = "onedark",
         },
     },
-
     {
         "AlexvZyl/nordic.nvim",
     },
     {
         "cpea2506/one_monokai.nvim",
+    },
+
+    {
+        "navarasu/onedark.nvim",
     },
 }
