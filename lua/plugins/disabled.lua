@@ -1,6 +1,6 @@
 return {
     {
-        "folke/persisted.nvim",
+        "folke/persistence.nvim",
         enabled = false,
     },
 
