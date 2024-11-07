@@ -1,11 +1,10 @@
 return {
-  -- remove phpcs as linter
-  -- Remove phpcs linter.
-  "mfussenegger/nvim-lint",
-  optional = true,
-  opts = {
-    linters_by_ft = {
-      php = {},
+    -- Remove phpcs linter.
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+        linters_by_ft = {
+            php = {},
+        },
     },
-  },
 }
