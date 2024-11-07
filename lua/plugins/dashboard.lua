@@ -22,7 +22,7 @@ return {
       ██▓▓░░  ▓▓██░░  ░░██▓▓  ░░▓▓██          
     ]]
 
-        logo = string.rep("\n", 2) .. logo .. "\n\n"
+        logo = string.rep("\n", 3) .. logo .. "\n\n"
 
         local opts = {
             theme = "doom",
@@ -35,13 +35,12 @@ return {
                 header = vim.split(logo, "\n"),
         -- stylua: ignore
         center = {
-          { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
+          -- { action = 'lua LazyVim.pick()()',                           desc = " Find File",       icon = " ", key = "f" },
           { action = "ene | startinsert",                              desc = " New File",        icon = " ", key = "n" },
           { action = 'lua LazyVim.pick("oldfiles")()',                 desc = " Recent Files",    icon = " ", key = "r" },
           { action = 'lua LazyVim.pick("live_grep")()',                desc = " Find Text",       icon = " ", key = "g" },
           { action = 'lua LazyVim.pick.config_files()()',              desc = " Config",          icon = " ", key = "c" },
-          { action = function () vim.cmd("Telescope persisted") end,   desc = " Manage Sessions", icon = " ", key = "m"},
-          { action = function ()  require("persisted").select() end,   desc = " Select Session",  icon = " ", key = "s" },
+          { action = function () vim.cmd("SessionSearch") end,         desc = " Manage Sessions", icon = " ", key = "m"},
           { action = "LazyExtras",                                     desc = " Lazy Extras",     icon = " ", key = "x" },
           { action = "Lazy",                                           desc = " Lazy",            icon = "󰒲 ", key = "l" },
           { action = function() vim.api.nvim_input("<cmd>qa<cr>") end, desc = " Quit",            icon = " ", key = "q" },
