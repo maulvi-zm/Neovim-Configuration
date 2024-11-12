@@ -3,7 +3,7 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "onedark",
+            colorscheme = "catppuccin",
         },
     },
     {
@@ -12,7 +12,6 @@ return {
     {
         "cpea2506/one_monokai.nvim",
     },
-
     {
         "navarasu/onedark.nvim",
     },
